@@ -15,7 +15,5 @@ WORKDIR /proxy
 RUN chmod +x executionbackup
 COPY ./failover.sh ./
 RUN chmod +x failover.sh
-COPY ./.jwt ./
-# RUN ./failover.sh
 
 CMD ./failover.sh
